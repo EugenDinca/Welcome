@@ -18,9 +18,9 @@ public class ConnectInfoConfig : BasePluginConfig
     [JsonPropertyName("WelcomePlayerOneEnable")] public string WelcomePlayerOneEnable { get; set; } = "true";
     [JsonPropertyName("WelcomePlayerAllEnable")] public string WelcomePlayerAllEnable { get; set; } = "true";
     [JsonPropertyName("DisconnectPlayerAllEnable")] public string DisconnectPlayerAllEnable { get; set; } = "true";
-    [JsonPropertyName("WelcomeText")] public string WelcomeText { get; set; } = " {RED}---------------------------------{ENTER} {LIGHTBLUE}Welcome on server {PLAYERNAME} {ENTER} Now map: {MAP} {ENTER} Players online: {PLAYERS}/{MAXPLAYERS} {ENTER} {RED}Your IP: {IPUSER} {ENTER} {RED}------------------------------ ";
-    [JsonPropertyName("disconnectAllText")] public string disconnectAllText { get; set; } = " {RED} {PLAYERNAME} disconnect to reason: {REASON} ";
-    [JsonPropertyName("WelcomeAllText")] public string WelcomeAllText { get; set; } = " {RED} {PLAYERNAME} connected to server";
+    [JsonPropertyName("WelcomeText")] public string WelcomeText { get; set; } = " {RED}---------------------------------{ENTER} {LIGHTBLUE}Welcome on Cs.Strike-Zone.Ro {PLAYERNAME} {ENTER} Now map: {MAP} {ENTER} Players online: {PLAYERS}/{MAXPLAYERS} {ENTER} {RED}Your IP: {IPUSER} {ENTER} Date: {DATE} {ENTER} Time: {TIME} {ENTER} {RED}------------------------------ ";
+    [JsonPropertyName("disconnectAllText")] public string disconnectAllText { get; set; } = " {GREEN} [Strike-Zone] {RED} {PLAYERNAME} disconnect to reason: {REASON} ";
+    [JsonPropertyName("WelcomeAllText")] public string WelcomeAllText { get; set; } = " {GREEN} [Strike-Zone] {RED} {PLAYERNAME} connected to server";
 }
 
 public class Main : BasePlugin, IPluginConfig<ConnectInfoConfig>
